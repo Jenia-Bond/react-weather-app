@@ -3,7 +3,16 @@ body {
   margin: 100px auto;
   background-color: #2f796b;
 }
-
+a {
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: aquamarine;
+}
+.footer {
+  text-align: center;
+}
 .card-body {
   background-color: #fff;
   padding: 25px;

@@ -22,6 +22,12 @@ export default function App() {
           <Forecast />
         </div>
       </div>
+      <div className="footer mt-2">
+        <a href="https://github.com/Jenia-Bond/react-weather-app">
+          Open-source code
+        </a>{" "}
+        by Eugenia Bondarenko
+      </div>
     </div>
   );
 }
