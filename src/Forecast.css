@@ -1,0 +1,11 @@
+.weekly-card {
+  margin: 3px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  text-align: center;
+  background-color: white;
+  transition: all 0.18s ease;
+}
+.temp {
+  font-size: 24px;
+}

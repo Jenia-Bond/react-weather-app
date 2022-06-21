@@ -1,8 +1,10 @@
+import React from "react";
 import "./App.css";
 import Search from "./Search";
 import City from "./City";
 import Weather from "./Weather";
 import WeatherDetails from "./WeatherDetails";
+import Forecast from "./Forecast";
 
 export default function App() {
   return (
@@ -15,6 +17,9 @@ export default function App() {
           <City />
           <Weather />
           <WeatherDetails />
+        </div>
+        <div>
+          <Forecast />
         </div>
       </div>
     </div>
