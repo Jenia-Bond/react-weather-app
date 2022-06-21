@@ -1,0 +1,40 @@
+form {
+  padding-bottom: 10px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #dee2e6;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px #dee2e6;
+}
+
+.submit-city {
+  width: 100%;
+  padding: 10px 15px;
+  color: whitesmoke;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px #2c5e7485;
+  transition: 200ms ease-in-out;
+}
+.submit-city {
+  background-color: #2f796b;
+}
+.submit-city:hover {
+  background-color: #224d5a;
+}
+.current-location:hover {
+  color: #fff;
+  background-color: #224d5a;
+}
+.current-location {
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px 15px;
+  color: #224d5a;
+  background-color: transparent;
+  border: 1px solid #2c5f74;
+  box-shadow: 2px 2px 4px #2c5e7485;
+  transition: 200ms ease-in-out;
+}

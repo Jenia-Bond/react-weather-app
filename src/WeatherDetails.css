@@ -1,0 +1,9 @@
+.weather-details {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+}
+.more-weather {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
