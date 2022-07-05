@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Search.css";
+import FormattedDate from "./FormattedDate";
 
 export default function Search(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -9,7 +10,7 @@ export default function Search(props) {
     console.log(response.data);
     setWeatherData({
       ready: true,
-      date: "Tuesday, 7:00",
+      date: new Date(response.data.dt * 1000),
       city: response.data.name,
       temperature: Math.round(response.data.main.temp),
       temp_min: Math.round(response.data.main.temp_min),
@@ -17,8 +18,8 @@ export default function Search(props) {
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
-      sunrise: response.data.sys.sunrise,
-      sunset: response.data.sys.sunset,
+      sunrise: new Date(response.data.sys.sunrise * 1000),
+      sunset: new Date(response.data.sys.sunset * 1000),
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
@@ -47,7 +48,9 @@ export default function Search(props) {
           <div className="col-4 City">
             <ul>
               <li className="searchedCity">{weatherData.city}</li>
-              <li>Updated: {weatherData.date}</li>
+              <li>
+                Updated: <FormattedDate date={weatherData.date} />{" "}
+              </li>
               <li className="weather-description">{weatherData.description}</li>
             </ul>
           </div>
@@ -65,7 +68,9 @@ export default function Search(props) {
                 <small>High</small>
               </div>
               <div className="col-4 more-weather">
-                <span className="weather-details">{weatherData.sunrise}</span>
+                <span className="weather-details">
+                  <FormattedDate date={weatherData.sunrise} />
+                </span>
                 <small>Sunrise</small>
               </div>
               <div className="col-4 more-weather">
@@ -77,7 +82,9 @@ export default function Search(props) {
                 <small>Low</small>
               </div>
               <div className="col-4">
-                <span className="weather-details">{weatherData.sunset}</span>
+                <span className="weather-details">
+                  <FormattedDate date={weatherData.sunset} />
+                </span>
                 <small>Sunset</small>
               </div>
               <div className="col-4">
