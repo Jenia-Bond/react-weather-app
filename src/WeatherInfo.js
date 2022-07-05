@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import TemperatureConversion from "./TemperatureConversion";
 
 export default function WeatherInfo(props) {
   return (
@@ -14,10 +15,8 @@ export default function WeatherInfo(props) {
         </ul>
       </div>
       <div className="col-3 Weather">
-        <span className="city-temp">{props.data.temperature}</span>
-        <span className="units">
-          <a href="/">°C</a> |<a href="/">°F</a>
-        </span>
+        <TemperatureConversion celsius={props.data.temperature} />
+
         <img src={props.data.icon} alt="Partly Cloudy" width="100px" />
       </div>
       <div className="col-5 WeatherDetails">
