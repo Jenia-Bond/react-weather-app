@@ -14,11 +14,12 @@ export default function WeatherInfo(props) {
           <li className="weather-description">{props.data.description}</li>
         </ul>
       </div>
-      <div className="col-3 Weather">
-        <TemperatureConversion celsius={props.data.temperature} />
 
-        <img src={props.data.icon} alt="Partly Cloudy" width="100px" />
+      <div className="col-3">
+        <TemperatureConversion celsius={props.data.temperature} />
+        <img src={props.data.icon} alt={props.data.description} width="100px" />
       </div>
+
       <div className="col-5 WeatherDetails">
         <div className="row">
           <div className="col-4 more-weather">
