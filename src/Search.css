@@ -38,3 +38,54 @@ input {
   box-shadow: 2px 2px 4px #2c5e7485;
   transition: 200ms ease-in-out;
 }
+.City .searchedCity {
+  margin: 0;
+  padding: 10px 0 10px 0;
+  font-size: 50px;
+  line-height: 1;
+  font-weight: bold;
+  color: #2f796b;
+  font-family: "Itim", cursive;
+}
+
+.City .weather-description {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: bold;
+}
+ul {
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+}
+.Weather .city-temp {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Itim", cursive;
+}
+.Weather .units {
+  position: relative;
+  top: -20px;
+  font-weight: bold;
+  font-family: "Itim", cursive;
+}
+.units .active {
+  color: black;
+  cursor: auto;
+}
+img {
+  position: relative;
+  right: 0;
+}
+a {
+  text-decoration: none;
+}
+.weather-details {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+}
+.more-weather {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
