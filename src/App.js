@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 
 import Search from "./Search";
-import Forecast from "./Forecast";
 
 export default function App() {
   return (
@@ -10,9 +9,6 @@ export default function App() {
       <div className="card card-body shadow-sm">
         <div>
           <Search defaultCity="New York" />
-        </div>
-        <div>
-          <Forecast />
         </div>
       </div>
       <div className="footer mt-2">
