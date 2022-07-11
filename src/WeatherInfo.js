@@ -23,7 +23,7 @@ export default function WeatherInfo(props) {
       <div className="col-5 WeatherDetails">
         <div className="row">
           <div className="col-4 more-weather">
-            <span className="weather-details">{props.data.temp_max}</span>
+            <span className="weather-details">{props.data.temp_max}°C</span>
             <small>High</small>
           </div>
           <div className="col-4 more-weather">
@@ -37,7 +37,7 @@ export default function WeatherInfo(props) {
             <small>Wind (km/ph)</small>
           </div>
           <div className="col-4">
-            <span className="weather-details">{props.data.temp_min}</span>
+            <span className="weather-details">{props.data.temp_min}°C</span>
             <small>Low</small>
           </div>
           <div className="col-4">
