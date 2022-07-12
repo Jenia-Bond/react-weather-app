@@ -12,14 +12,22 @@ export default function App() {
         </div>
       </div>
       <div className="footer mt-2">
+        This project was coded by Eugenia Bondarenko and is{" "}
         <a
           href="https://github.com/Jenia-Bond/react-weather-app"
           target="_blank"
           rel="noreferrer"
         >
-          Open-source code hosted on GitHub
+          open-sourced on GitHub
         </a>{" "}
-        by Eugenia Bondarenko
+        and hosted on{" "}
+        <a
+          href="https://app.netlify.com/teams/jenia-bond/overview"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Netlify
+        </a>
       </div>
     </div>
   );
